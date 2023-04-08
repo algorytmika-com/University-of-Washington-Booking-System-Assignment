@@ -7,7 +7,7 @@ def main():
         response = input(f.prompt)  
         f.clear_console()
         if response == "1":
-            pass
+            f.get_bookings_from_file()
         elif response == "2":
             pass
         elif response == "3":

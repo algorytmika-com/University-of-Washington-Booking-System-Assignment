@@ -1,7 +1,7 @@
-from faker import Faker
-from settings import csv_path
 import pandas as pd
-
+import os
+from pathlib import Path
+from faker import Faker
 
 fake = Faker()
 
@@ -24,4 +24,6 @@ df = pd.DataFrame(
     ]
 )
 
+filename = "/../resources/booking_quotes.csv"
+csv_path = Path(os.path.dirname(os.path.abspath(__file__)) + filename)
 df.to_csv(csv_path, index=False)

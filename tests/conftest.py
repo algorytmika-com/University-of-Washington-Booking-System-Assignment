@@ -10,6 +10,6 @@
 import pytest, sys, os
 from pathlib import Path
 
-#set enviroment ot recognize modules
+#set enviroment to recognize modules
 folder = "/../src/assignment07"
 sys.path.insert(0, Path(os.path.dirname(os.path.abspath(__file__)) + folder))

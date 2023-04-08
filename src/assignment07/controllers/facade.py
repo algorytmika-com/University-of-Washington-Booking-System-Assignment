@@ -1,5 +1,8 @@
 import sys, os
 
+
+from controllers import file as f
+
 prompt = "\n".join(("Please choose from below options:",
           "1 - Load bookings in from a file",
           "2 - Add a new booking",
@@ -11,6 +14,11 @@ prompt = "\n".join(("Please choose from below options:",
           "8 - Generate a report of dangerous goods shipments",
           "9 - Quit",
           ">>> "))
+
+def get_bookings_from_file():
+    global bookings
+    csv_path = f.get_path()
+    bookings = f.get_csv_content(csv_path)
 
 def exit_program() -> None:
     print("Bye!")
