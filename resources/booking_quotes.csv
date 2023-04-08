@@ -1,0 +1,1 @@
+booking_id,customer_name,package_description,is_dangerous,weight,volume,required_delivery_date,is_urgent,is_large,is_international,route_accepted,price_accepted
