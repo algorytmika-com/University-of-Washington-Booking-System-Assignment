@@ -33,18 +33,10 @@ def is_dangerous() -> bool:
         return False   
 
 def get_input_weight() -> float:
-    while True:
-        input = get_input("Enter the weight in kgs:", 'weight', "Positive float value (e.g. 7.25)") 
-        try:
-            weight = float(input)
-        except ValueError:
-            print("The weight is not of float type.")
-        is_business_validated = bv.is_weight_business_rule(weight, "Packages can only be shipped if they weigh less than 10Kg.")
-        if is_exit_from_procedure(is_business_validated):
-            return -1
-        else:
-            continue
-    return weight
+    return get_input_with_business_validation('weight')
+
+def get_input_volume() -> float:
+    pass
 
 def get_input(prompt, validation_option, format) -> str:
     while True:
@@ -57,7 +49,7 @@ def get_input(prompt, validation_option, format) -> str:
             Please enter again: """)
             continue
     return result
-
+ 
 def is_exit_from_procedure(is_validated) -> bool:
     if is_validated:
         return False
@@ -67,6 +59,22 @@ def is_exit_from_procedure(is_validated) -> bool:
             return True
         else:
             return False
+        
+def get_input_with_business_validation(option):
+    while True:
+        input = get_input("Enter the weight in kgs:", 'weight', "Positive float value (e.g. 7.25)") 
+        try:
+            value = float(input)
+        except ValueError:
+            print("The value is not of float type.")
+        is_business_validated = bv.is_valid(value, option, )
+        if is_business_validated:
+            return value
+        else:
+            if is_exit_from_procedure(is_business_validated):
+                return -1
+            else:
+                continue    
 
 
 
