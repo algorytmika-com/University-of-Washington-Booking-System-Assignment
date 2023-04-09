@@ -1,24 +1,31 @@
 import sys, os
 
 
-from controllers import file as f
+from controllers import file as f, booking as b
+from utils import format as fmt
 
 prompt = "\n".join(("Please choose from below options:",
-          "1 - Load bookings in from a file",
-          "2 - Add a new booking",
-          "3 - Generate a report of all bookings",
-          "4 - Generate a report of urgent booking",
-          "5 - Generate a report of truck shipments",
-          "6 - Generate a report of air shipments",
-          "7 - Generate a report of ocean shipments",
-          "8 - Generate a report of dangerous goods shipments",
-          "9 - Quit",
+          "1 - Add a new booking",
+          "2 - Generate a report of all bookings",
+          "3 - Generate a report of urgent booking",
+          "4 - Generate a report of truck shipments",
+          "5 - Generate a report of air shipments",
+          "6 - Generate a report of ocean shipments",
+          "7 - Generate a report of dangerous goods shipments",
+          "8 - Quit",
           ">>> "))
 
-def get_bookings_from_file():
-    global bookings
+def add_booking():
     csv_path = f.get_path()
-    bookings = f.get_csv_content(csv_path)
+    bookings = f.get_dataframe_from_file(csv_path)
+    booking_incremented_id = b.get_booking_max_id(bookings) + 1
+    print(booking_incremented_id)
+    consumer_name = b.get_input_consumer_name()
+    print(consumer_name)
+    destination_country = b.get_destination_country()
+    print(destination_country)
+
+
 
 def exit_program() -> None:
     print("Bye!")

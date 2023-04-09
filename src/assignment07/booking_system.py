@@ -7,7 +7,7 @@ def main():
         response = input(f.prompt)  
         f.clear_console()
         if response == "1":
-            f.get_bookings_from_file()
+            f.add_booking()
         elif response == "2":
             pass
         elif response == "3":
@@ -20,9 +20,7 @@ def main():
             pass 
         elif response == "7":        
             pass       
-        elif response == "8":        
-            pass           
-        elif response == "9":
+        elif response == "8":
             f.exit_program()
         else:
             print("Not a valid option!")
