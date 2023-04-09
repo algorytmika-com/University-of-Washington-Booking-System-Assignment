@@ -16,24 +16,25 @@ prompt = "\n".join(("Please choose from below options:",
           ">>> "))
 
 def add_booking():
-    csv_path = f.get_path()
-    bookings = f.get_dataframe_from_file(csv_path)
-    booking_incremented_id = b.get_booking_max_id(bookings) + 1
-    print(booking_incremented_id)
-    consumer_name = b.get_input_consumer_name()
-    print(consumer_name)
-    package_description = b.get_package_description()
-    print(package_description)
-    is_dangerous = b.is_dangerous()
-    print(is_dangerous)
-    weight = b.get_input_weight()
-    print(weight)
+    while True:
+        csv_path = f.get_path()
+        bookings = f.get_dataframe_from_file(csv_path)
+        booking_incremented_id = b.get_booking_max_id(bookings) + 1
+        print(booking_incremented_id)
+        consumer_name = b.get_input_consumer_name()
+        print(consumer_name)
+        package_description = b.get_package_description()
+        print(package_description)
+        is_dangerous = b.is_dangerous()
+        print(is_dangerous)
+        weight = b.get_input_weight()
+        print(weight)
+        if weight == -1:
+            break
 
-
-
-    destination_country = b.get_destination_country()
-    print(destination_country)
-
+        destination_country = b.get_destination_country()
+        print(destination_country)
+        break
 
 
 def exit_program() -> None:

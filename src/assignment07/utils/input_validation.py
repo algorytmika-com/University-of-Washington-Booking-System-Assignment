@@ -51,43 +51,8 @@ def is_weight(input):
         input = float(input)
     except ValueError:
         return False
-    schema = schema = {'input': {'type' : 'float', 'empty': False, 'min' : 0.01, 'max' : 10}}
+    schema = schema = {'input': {'type' : 'float', 'empty': False, 'min' : 0}}
     v = Validator(schema)
     document = {'input' : input}
     return v.validate(document)    
 
-
-
-
-
-def is_ssn(input):
-    schema = {'input': {'type' : 'string',  'regex' : '^\d{3}-?\d{2}-?\d{4}$'}}
-    v = Validator(schema)
-    document = {'input' : input}
-    return v.validate(document)
-
-def is_required_date(input):
-    if isinstance(input, str):
-        format_str = '%m/%d/%Y'
-        try:
-            input = datetime.strptime(input, format_str)
-        except ValueError:
-            return False
-    else:
-        return False
-    if isinstance(input, datetime):
-        if input.date() > datetime.now().date():
-            return False
-        else:
-            schema = {'input': {'type' : 'datetime'}}
-            v = Validator(schema)
-            document = {'input' : input}
-            return v.validate(document)   
-    else:
-        return False
-    
-def is_not_required_date(input):
-    if input == '':
-        return True
-    else:
-        return is_required_date(input)
