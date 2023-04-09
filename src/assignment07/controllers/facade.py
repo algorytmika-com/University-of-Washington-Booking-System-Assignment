@@ -17,7 +17,8 @@ prompt = "\n".join(("Please choose from below options:",
 
 def add_booking():
     while True:
-
+        required_date = b.get_required_date()
+        print(required_date)
 
         csv_path = f.get_path()
         bookings = f.get_dataframe_from_file(csv_path)

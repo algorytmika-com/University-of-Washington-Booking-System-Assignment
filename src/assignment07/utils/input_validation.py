@@ -12,15 +12,11 @@ def is_valid(value, option):
         return is_description(value)     
     elif option == 'positive_float':
         return is_positive_float(value)        
+    elif option == 'future_date':
+        return is_future_date(value)       
     else:
         print("The validation option not exists!!!")
         return False
-    
-def is_not_comma(input):
-    schema = {'input': {'type' : 'string', 'contains' : ','}}
-    v = Validator(schema)
-    document = {'input' : input}
-    return not v.validate(document)    
     
 def is_full_name(input):
     schema = {'input': {'type' : 'string', 'minlength': 5, 'regex' : r'[a-zA-Z \.]+'}}
@@ -56,3 +52,22 @@ def is_positive_float(input):
     document = {'input' : input}
     return v.validate(document)    
 
+def is_future_date(input):
+    if isinstance(input, str):
+        format_str = '%m/%d/%Y'
+        try:
+            input = datetime.strptime(input, format_str)
+        except ValueError:
+            return False
+    else:
+        return False
+    if isinstance(input, datetime):
+        if input.date() < datetime.now().date():
+            return False
+        else:  
+            schema = {'input': {'type' : 'datetime'}}
+            v = Validator(schema)
+            document = {'input' : input}
+            return v.validate(document)   
+    else:
+        return False    

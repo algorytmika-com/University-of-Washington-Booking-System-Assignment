@@ -50,6 +50,10 @@ def get_input_volume() -> float:
     volume = width * depth * height
     return volume
 
+def get_required_date():
+    input = get_input("What is the required delivery date (month/date/year):", 'future_date', "Future date (month/date/year)")
+    return input
+
 def get_input(prompt, validation_option, format) -> str:
     while True:
         result = input(f"{prompt} ")
