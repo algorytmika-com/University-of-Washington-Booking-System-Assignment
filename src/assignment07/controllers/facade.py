@@ -22,6 +22,15 @@ def add_booking():
     print(booking_incremented_id)
     consumer_name = b.get_input_consumer_name()
     print(consumer_name)
+    package_description = b.get_package_description()
+    print(package_description)
+    is_dangerous = b.is_dangerous()
+    print(is_dangerous)
+    weight = b.get_input_weight()
+    print(weight)
+
+
+
     destination_country = b.get_destination_country()
     print(destination_country)
 
