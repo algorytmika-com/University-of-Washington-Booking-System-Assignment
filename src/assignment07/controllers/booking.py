@@ -2,12 +2,13 @@ import pandas as pd
 from utils import input_validation as iv
 from utils import business_validation as bv
 
+
 POSITIVE_FLOAT = "Positive float value (e.g. 7.25)"
 
 def get_booking_max_id(bookings : pd.DataFrame) -> int:
     return bookings['booking_id'].max()
 
-def get_input_consumer_name() -> str:
+def get_input_customer_name() -> str:
     return get_input("Enter the name:", 'full_name', "Minimum 5 letters.")
 
 def is_international() -> bool:
@@ -33,6 +34,13 @@ def is_dangerous() -> bool:
         return True
     else:
         return False   
+    
+def is_urgent() -> bool:
+    input = get_input("Is urgent? [Y/N]:", 'true_false', "[Y/N]")
+    if input.lower() == 'y':
+        return True
+    else:
+        return False     
 
 def get_input_weight() -> float:
     return get_input_with_business_validation("weight", "Enter the weight in kgs [max 10]:", 'positive_float', POSITIVE_FLOAT)
@@ -92,5 +100,7 @@ def get_input_with_business_validation(business_validation_option, prompt, input
             else:
                 continue    
 
+def change_booking_after_validation(customer_booking):
+    bv.is_rule_for_dangerous(customer_booking)
 
 

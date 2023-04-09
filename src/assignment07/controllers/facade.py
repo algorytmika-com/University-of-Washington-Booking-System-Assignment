@@ -1,8 +1,8 @@
 import sys, os
 
-
 from controllers import file as f, booking as b
 from utils import format as fmt
+from models import booking
 
 prompt = "\n".join(("Please choose from below options:",
           "1 - Add a new booking",
@@ -17,30 +17,24 @@ prompt = "\n".join(("Please choose from below options:",
 
 def add_booking():
     while True:
-        required_date = b.get_required_date()
-        print(required_date)
-
         csv_path = f.get_path()
         bookings = f.get_dataframe_from_file(csv_path)
         booking_incremented_id = b.get_booking_max_id(bookings) + 1
-        print(booking_incremented_id)
-        consumer_name = b.get_input_consumer_name()
-        print(consumer_name)
+        customer_name = b.get_input_customer_name()
         package_description = b.get_package_description()
-        print(package_description)
+        destination_country = b.get_destination_country()
+        is_urgent = b.is_urgent()
         is_dangerous = b.is_dangerous()
-        print(is_dangerous)
         weight = b.get_input_weight()
-        print(weight)
         if weight == -1:
             break
         volume = b.get_input_volume()
-        print(volume)
         if volume == -1:
             break
-
-        destination_country = b.get_destination_country()
-        print(destination_country)
+        required_delivery_date = b.get_required_date()
+        customer_booking = booking.Booking(booking_incremented_id, customer_name, destination_country, package_description, weight, volume, required_delivery_date, is_dangerous, is_urgent)
+        print(booking_incremented_id, customer_name, destination_country, package_description, weight, volume, required_delivery_date, is_dangerous, is_urgent)
+        b.change_booking_after_validation(customer_name)
         break
 
 
