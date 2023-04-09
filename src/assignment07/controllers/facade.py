@@ -17,6 +17,8 @@ prompt = "\n".join(("Please choose from below options:",
 
 def add_booking():
     while True:
+
+
         csv_path = f.get_path()
         bookings = f.get_dataframe_from_file(csv_path)
         booking_incremented_id = b.get_booking_max_id(bookings) + 1
@@ -30,6 +32,10 @@ def add_booking():
         weight = b.get_input_weight()
         print(weight)
         if weight == -1:
+            break
+        volume = b.get_input_volume()
+        print(volume)
+        if volume == -1:
             break
 
         destination_country = b.get_destination_country()

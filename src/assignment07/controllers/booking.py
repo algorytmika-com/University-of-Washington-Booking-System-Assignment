@@ -2,6 +2,8 @@ import pandas as pd
 from utils import input_validation as iv
 from utils import business_validation as bv
 
+POSITIVE_FLOAT = "Positive float value (e.g. 7.25)"
+
 def get_booking_max_id(bookings : pd.DataFrame) -> int:
     return bookings['booking_id'].max()
 
@@ -33,10 +35,20 @@ def is_dangerous() -> bool:
         return False   
 
 def get_input_weight() -> float:
-    return get_input_with_business_validation('weight')
+    return get_input_with_business_validation("weight", "Enter the weight in kgs [max 10]:", 'positive_float', POSITIVE_FLOAT)
 
 def get_input_volume() -> float:
-    pass
+    width = get_input_with_business_validation("dimension", "Enter the width in meters [max 5] :", 'positive_float', POSITIVE_FLOAT)
+    if width == -1:
+        return -1
+    height = get_input_with_business_validation("dimension", "Enter the height in meters [max 5] :", 'positive_float', POSITIVE_FLOAT)
+    if height == -1:
+        return -1    
+    depth = get_input_with_business_validation("dimension", "Enter the depth in meters [max 5] :", 'positive_float', POSITIVE_FLOAT)
+    if depth == -1:
+        return -1
+    volume = width * depth * height
+    return volume
 
 def get_input(prompt, validation_option, format) -> str:
     while True:
@@ -60,14 +72,14 @@ def is_exit_from_procedure(is_validated) -> bool:
         else:
             return False
         
-def get_input_with_business_validation(option):
+def get_input_with_business_validation(business_validation_option, prompt, input_validation_option, format):
     while True:
-        input = get_input("Enter the weight in kgs:", 'weight', "Positive float value (e.g. 7.25)") 
+        input = get_input(prompt, input_validation_option, format) 
         try:
             value = float(input)
         except ValueError:
             print("The value is not of float type.")
-        is_business_validated = bv.is_valid(value, option, )
+        is_business_validated = bv.is_valid(value, business_validation_option)
         if is_business_validated:
             return value
         else:

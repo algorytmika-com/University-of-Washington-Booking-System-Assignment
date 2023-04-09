@@ -10,8 +10,8 @@ def is_valid(value, option):
         return is_destination_country(value) 
     elif option == 'description':
         return is_description(value)     
-    elif option == 'weight':
-        return is_weight(value)        
+    elif option == 'positive_float':
+        return is_positive_float(value)        
     else:
         print("The validation option not exists!!!")
         return False
@@ -46,7 +46,7 @@ def is_description(input):
     document = {'input' : input}
     return v.validate(document)
 
-def is_weight(input):
+def is_positive_float(input):
     try:
         input = float(input)
     except ValueError:
