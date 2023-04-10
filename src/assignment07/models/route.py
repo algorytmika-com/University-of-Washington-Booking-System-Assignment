@@ -24,13 +24,13 @@ class Route:
         self.is_ocean = is_ocean    
 
     def set_ground_price(self, ground_price : float):
-        self.ground_price = ground_price     
+        self.ground_price = round(ground_price , 2)    
 
     def set_air_price(self, air_price : float):
-        self.air_price = air_price    
+        self.air_price = round(air_price, 2)
 
     def set_ocean_price(self, ocean_price : float):
-        self.ocean_price = ocean_price                      
+        self.ocean_price = round(ocean_price, 2)                      
 
     def set_preferred_route(self, preferred_route : str):
         self.preferred_route = preferred_route           

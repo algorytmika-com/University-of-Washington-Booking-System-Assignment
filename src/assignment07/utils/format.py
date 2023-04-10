@@ -9,3 +9,10 @@ def print_message(message):
     print('\n' + separator)
     print(message)
     print(separator + '\n')
+
+
+def print_table(message):
+    separator = 50 * '-'
+    print('\n' + separator)
+    print(message)
+    print(separator + '\n')
