@@ -9,6 +9,5 @@ def is_date_in_future_days(checked_date, days, compare_date = datetime.today()):
         return True
     return False
 
-
 def get_date_converted_from_str(date_str, format):
     return datetime.strptime(date_str, format)

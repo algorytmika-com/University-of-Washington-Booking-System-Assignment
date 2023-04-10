@@ -2,6 +2,7 @@ import pandas as pd
 import os, csv
 from pathlib import Path
 from faker import Faker
+from datetime import datetime
 
 fake = Faker()
 
@@ -14,11 +15,14 @@ df = pd.DataFrame(
             "package_description" : fake.sentence(nb_words=8),
             "weight" : fake.pyfloat(min_value=0, max_value=10),
             "volume" : fake.pyfloat(min_value=0, max_value=125),
-            "required_delivery_date" : fake.date('%m/%d/%Y'),
+            "required_delivery_date" : datetime.strftime(fake.date_this_year(before_today = True, after_today = False), '%m/%d/%Y'),
             "is_dangerous": fake.boolean(chance_of_getting_true = 20),
             "is_urgent" : fake.boolean(chance_of_getting_true = 30),
-            "route" : "ground" if fake.boolean(chance_of_getting_true = 33) else "air" if fake.boolean(chance_of_getting_true = 50) else "ocean",
-            "price_accepted" : fake.pyfloat(min_value=25, max_value=200)
+            "possible_delivery_date" : datetime.strftime(fake.date_this_year(before_today = False, after_today = True), '%m/%d/%Y'),
+            "ground_price" : fake.pyfloat(min_value=25, max_value=200) if fake.boolean(chance_of_getting_true = 50) else int(-1),
+            "air_price" : fake.pyfloat(min_value=25, max_value=200) if fake.boolean(chance_of_getting_true = 50) else int(-1),
+            "ocean_price" : fake.pyfloat(min_value=25, max_value=200) if fake.boolean(chance_of_getting_true = 50) else int(-1),
+            "preferred_route" : "ground" if fake.boolean(chance_of_getting_true = 33) else "air" if fake.boolean(chance_of_getting_true = 50) else "ocean"
         }
         for _ in range(100)
     ]

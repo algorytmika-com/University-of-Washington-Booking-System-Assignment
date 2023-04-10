@@ -8,8 +8,9 @@
 """
 
 import pytest, sys, os
-from pathlib import Path
 
 #set enviroment to recognize modules
 folder = "/../src/assignment07"
-sys.path.insert(0, Path(os.path.dirname(os.path.abspath(__file__)) + folder))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)) + folder)
+
+

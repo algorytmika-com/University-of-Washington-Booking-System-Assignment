@@ -34,7 +34,7 @@ def add_booking():
         required_delivery_date = b.get_required_date()
         customer_booking = booking.Booking(booking_incremented_id, customer_name, destination_country, package_description, weight, volume, required_delivery_date, is_dangerous, is_urgent)
         print(booking_incremented_id, customer_name, destination_country, package_description, weight, volume, required_delivery_date, is_dangerous, is_urgent)
-        b.change_booking_after_validation(customer_name)
+        b.get_route(customer_booking)
         break
 
 

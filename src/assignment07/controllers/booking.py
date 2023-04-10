@@ -1,6 +1,7 @@
 import pandas as pd
 from utils import input_validation as iv
 from utils import business_validation as bv
+from models import booking as b, route as r
 
 
 POSITIVE_FLOAT = "Positive float value (e.g. 7.25)"
@@ -100,7 +101,22 @@ def get_input_with_business_validation(business_validation_option, prompt, input
             else:
                 continue    
 
-def change_booking_after_validation(customer_booking):
-    bv.is_rule_for_dangerous(customer_booking)
+def get_route(customer_booking : b.Booking) -> r.Route:
+    route = r.Route(is_ground = True, is_air = True, is_ocean = True)
+    route.set_preferred_route(route.GROUND)
+    if not bv.is_international(customer_booking):
+        route.set_ocean_route(False)
+    if bv.is_urgent(customer_booking):
+        route.set_preferred_route(route.AIR)
+    if bv.is_dangerous(customer_booking):
+        route.set_air_route(False)
+    if (bv.is_heavy(customer_booking) or bv.is_large(customer_booking)) and not bv.is_urgent(customer_booking):
+        if bv.is_international(customer_booking):
+            route.set_preferred_route(route.OCEAN)
+        else:
+            route.set_preferred_route(route.GROUND)
+    return route
+
+        
 
 

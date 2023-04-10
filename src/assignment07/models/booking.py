@@ -1,3 +1,5 @@
+from models import route
+
 class Booking:
 
     def __init__(self, booking_id, customer_name, destination_country, package_description, weight, volume, required_delivery_date, is_dangerous, is_urgent):
@@ -11,8 +13,10 @@ class Booking:
         self.is_dangerous = is_dangerous
         self.is_urgent = is_urgent
 
-    def set_price_accepted(self, price_accepted ):
-        self.price_accepted = price_accepted         
+    def set_possible_delivery_date(self, possible_delivery_date):
+        self.possible_delivery_date = possible_delivery_date
 
-    def set_route(self, route):
-        self.route = route            
+    def set_route(self, route : route.Route) -> None:
+        self.route = route
+
+       
