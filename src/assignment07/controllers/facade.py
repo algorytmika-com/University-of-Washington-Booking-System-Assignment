@@ -34,7 +34,10 @@ def add_booking():
         customer_booking.set_route(route)
         route = b.get_route_prices(customer_booking)
         customer_booking.set_route(route)
-        r.print_shipping_options(r.convert_to_dataframe(customer_booking), "AVAILABLE ROUTING OPTIONS")
+        customer_booking.set_dataframe()
+        df = customer_booking.dataframe
+        r.print_shipping_options(df, "AVAILABLE ROUTING OPTIONS")
+        f.append_dataframe_to_file(df, f.get_path())
         break
 
 def report_all_bookings():
