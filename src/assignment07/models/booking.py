@@ -1,3 +1,5 @@
+import pandas as pd
+
 from models import route
 
 class Booking:
@@ -15,10 +17,21 @@ class Booking:
         self.is_dangerous = is_dangerous
         self.is_urgent = is_urgent
 
-    def set_possible_delivery_date(self, possible_delivery_date):
-        self.possible_delivery_date = possible_delivery_date
-
     def set_route(self, route : route.Route) -> None:
         self.route = route
 
-       
+    def set_dataframe(self) -> pd.DataFrame:
+        d = {'booking_id' : [self.booking_id],
+            'customer_name' : [self.customer_name],
+            'destination_country' : [self.destination_country],
+            'package_description' : [self.package_description],
+            'weight' : [self.weight],
+            'volume' : [self.volume],         
+            'required_delivery_date' : [self.required_delivery_date],
+            'is_dangerous' : [self.is_dangerous],
+            'is_urgent' : [self.is_urgent],
+            'ground_price' : [self.route.ground_price],
+            'air_price' : [self.route.air_price], 
+            'ocean_price' : [self.route.ocean_price]
+            }
+        self.dataframe = pd.DataFrame(data=d)       

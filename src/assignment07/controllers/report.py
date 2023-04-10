@@ -3,20 +3,6 @@ import pandas as pd
 from models import booking as b
 from utils import format as f
 
-def convert_to_dataframe(booking_obj : b.Booking) -> pd.DataFrame:
-    d = {'customer_name' : [booking_obj.customer_name],
-         'destination_country' : [booking_obj.destination_country],
-         'package_description' : [booking_obj.package_description],
-         'weight' : [booking_obj.weight],
-         'volume' : [booking_obj.volume],
-         'is_dangerous' : [booking_obj.is_dangerous],
-         'is_urgent' : [booking_obj.is_urgent],
-         'air_price' : [booking_obj.route.air_price], 
-         'ground_price' : [booking_obj.route.ground_price],
-         'ocean_price' : [booking_obj.route.ocean_price]
-         }
-    return pd.DataFrame(data=d)
-
 def print_all_bookings(booking: pd.DataFrame, title):
     print_shipping_options(booking, title)
 

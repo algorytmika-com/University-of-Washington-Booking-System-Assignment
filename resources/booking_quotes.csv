@@ -1,101 +1,102 @@
-"booking_id","customer_name","destination_country","package_description","weight","volume","required_delivery_date","is_dangerous","is_urgent","possible_delivery_date","ground_price","air_price","ocean_price","preferred_route"
-678,"Zachary Adams","Iceland","Shake decade ask brother total teach agent line.",7.96,44.39,"03/25/2023",False,False,"05/30/2023",162.89,136.5,151.55,"air"
-590,"Nathaniel Mann","Andorra","Speak behavior else others particular nothing your.",3.44,97.37,"02/12/2023",True,False,"11/12/2023",-1.0,159.91,-1.0,"ocean"
-874,"Sherry Murray","United States of America","Around half gas watch medical citizen result record money expect.",5.55,19.62,"01/24/2023",True,True,"11/07/2023",56.4,-1.0,-1.0,"ocean"
-374,"George Taylor","Cook Islands","Character point several including mouth stock.",8.33,10.64,"01/26/2023",False,False,"11/03/2023",-1.0,-1.0,67.13,"ocean"
-30,"Cole Ortiz","United States of America","Skill nature probably include board game.",5.0,98.92,"03/29/2023",False,True,"10/02/2023",-1.0,-1.0,-1.0,"ground"
-513,"Larry Swanson","United States of America","Outside network member inside budget important however.",3.17,15.2,"01/20/2023",False,False,"10/12/2023",-1.0,68.27,55.92,"air"
-593,"Brandy Acevedo","Russian Federation","Resource foreign that let hold our offer maintain.",4.99,114.2,"03/29/2023",False,False,"04/25/2023",125.89,120.73,32.92,"ocean"
-710,"Jeffery Davis","United States of America","Piece begin understand soon future sister.",9.85,37.34,"03/22/2023",False,False,"07/19/2023",-1.0,190.2,74.79,"air"
-728,"Monica Bell","Singapore","House pattern pass car director certainly blue admit.",4.26,91.22,"01/04/2023",True,True,"05/13/2023",-1.0,114.84,-1.0,"ground"
-644,"Alexander Mullins","United States of America","Family already site with.",5.89,109.52,"01/26/2023",True,True,"10/12/2023",-1.0,-1.0,-1.0,"ocean"
-724,"David Pope","Bosnia and Herzegovina","Claim for hair computer itself fight oil theory size shake.",8.43,74.34,"03/21/2023",False,False,"07/05/2023",-1.0,160.3,134.48,"ground"
-913,"Nicole Young","United States of America","Method box me issue agent shoulder administration job everybody.",2.27,114.64,"03/27/2023",True,False,"04/20/2023",-1.0,-1.0,67.48,"air"
-781,"Sarah Jimenez","Benin","Story kid great another nothing cause.",7.37,40.12,"01/26/2023",False,True,"10/28/2023",-1.0,-1.0,194.66,"air"
-337,"Cindy Thomas","Benin","Able affect run serious agent bit prove agreement.",0.97,36.64,"01/21/2023",False,False,"07/11/2023",119.51,-1.0,34.77,"ground"
-99,"Michele Campbell","United States of America","Room reason green above prepare short expect provide.",1.4,97.12,"03/19/2023",False,False,"04/20/2023",-1.0,103.9,-1.0,"ocean"
-399,"Aaron Miller","Palestinian Territory","Name friend economic long size then pattern effect.",5.51,84.71,"02/10/2023",False,True,"11/08/2023",-1.0,39.37,-1.0,"air"
-689,"Matthew Briggs","Nepal","Generation alone establish sit news.",3.79,105.69,"04/01/2023",False,False,"07/17/2023",-1.0,-1.0,33.96,"ground"
-385,"Anthony Gonzalez","United States of America","For wear six draw state last rather bill skill.",8.95,97.14,"03/08/2023",False,False,"04/23/2023",-1.0,-1.0,-1.0,"air"
-347,"Richard Johnson","Malaysia","Least professor continue quite air game.",9.72,96.77,"03/19/2023",True,False,"10/26/2023",-1.0,138.13,-1.0,"ground"
-581,"John Williams","United States of America","Travel her speech activity few miss military available professor.",6.95,70.9,"02/02/2023",False,False,"09/21/2023",-1.0,125.71,145.18,"ocean"
-298,"Kelly Brown","United States of America","Box message black describe budget thought.",2.2,52.89,"03/16/2023",False,False,"08/29/2023",79.72,147.26,133.29,"ocean"
-945,"Amy Hebert","Guinea-Bissau","Head partner into write both.",0.44,85.38,"02/24/2023",False,False,"12/18/2023",-1.0,-1.0,87.0,"ground"
-219,"Henry Mays","Saint Barthelemy","Camera prevent region sing benefit say.",6.51,22.26,"01/24/2023",False,False,"05/03/2023",141.82,-1.0,-1.0,"ground"
-637,"Allison Robinson","Guernsey","His he course read focus less short network choose suffer.",3.8,117.83,"02/03/2023",True,False,"12/18/2023",77.29,-1.0,-1.0,"air"
-83,"Michael Ferguson","Chile","Special top move nothing training operation.",3.15,41.41,"03/22/2023",True,True,"05/16/2023",-1.0,-1.0,-1.0,"air"
-848,"Sheena Stevens","Cuba","Gun edge week hotel sport consumer fall.",7.52,20.79,"03/01/2023",False,False,"08/06/2023",-1.0,-1.0,33.35,"air"
-349,"Christina Rios","Lebanon","Act thing nothing task last measure inside military.",1.48,1.56,"03/19/2023",False,False,"07/14/2023",-1.0,-1.0,134.8,"ground"
-71,"Roberto Holt","United States of America","Go I should why government ground white by wide.",2.69,70.57,"01/01/2023",False,False,"04/13/2023",60.74,-1.0,-1.0,"air"
-500,"Megan Schmidt","Ecuador","Minute provide how know new single nice family point.",9.83,57.12,"02/11/2023",False,True,"12/26/2023",64.26,-1.0,98.21,"air"
-494,"Stephanie Young","United States of America","Member involve customer mind coach.",7.85,10.62,"03/21/2023",False,False,"11/07/2023",34.38,135.12,-1.0,"ocean"
-462,"Cody Myers","United States Minor Outlying Islands","Character respond discussion concern lead television.",3.78,45.41,"04/03/2023",False,False,"12/25/2023",-1.0,135.52,157.68,"air"
-6,"Robin Saunders","Angola","Reveal office ability child perform blue.",4.68,39.26,"01/24/2023",False,True,"07/03/2023",-1.0,185.2,-1.0,"ground"
-221,"Jennifer Nelson","United States of America","Same memory garden increase expect.",8.6,92.29,"01/09/2023",False,False,"06/07/2023",-1.0,-1.0,-1.0,"ocean"
-230,"Ashley Montes","United States of America","Explain power per state foreign eat real top serve relate.",5.65,59.6,"02/28/2023",False,False,"08/15/2023",-1.0,42.2,-1.0,"ocean"
-110,"Cheryl Wilcox","Cocos (Keeling) Islands","Common trouble concern late major degree.",6.84,35.89,"02/06/2023",False,True,"07/19/2023",-1.0,-1.0,158.33,"ground"
-270,"Christopher Williams","Yemen","Decide occur tax other hair executive other.",9.2,64.23,"01/05/2023",False,True,"09/06/2023",-1.0,101.97,-1.0,"air"
-379,"Maria Chan","United States of America","Find above friend thousand capital room.",1.3,46.33,"01/23/2023",False,False,"04/17/2023",147.13,36.31,53.64,"ocean"
-484,"Cody Oneill","Senegal","Usually other eight former of.",2.3,101.9,"02/02/2023",False,False,"08/04/2023",-1.0,-1.0,28.54,"ground"
-587,"Valerie Barr","Portugal","Himself maintain nation matter anything matter improve throughout.",0.61,30.35,"03/24/2023",False,False,"07/15/2023",170.48,-1.0,-1.0,"ground"
-26,"Amanda Nelson","South Georgia and the South Sandwich Islands","Beat manager enjoy management prove fact.",0.54,38.43,"01/30/2023",False,False,"09/30/2023",-1.0,153.28,-1.0,"ground"
-937,"Holly Schwartz","Christmas Island","Both yourself health yet mother behind top may do.",9.57,101.16,"03/01/2023",False,False,"06/10/2023",-1.0,-1.0,64.4,"ocean"
-527,"Cassidy Suarez","United States of America","Human statement other almost bad.",0.27,35.78,"01/06/2023",False,False,"10/14/2023",36.4,187.58,87.35,"ocean"
-825,"Manuel Hodges","United States of America","Well operation happen couple by paper executive whom impact culture thought.",2.45,105.76,"01/15/2023",False,True,"08/19/2023",-1.0,-1.0,112.17,"air"
-388,"Leslie Ortiz","United States of America","Bed field involve window thing magazine however.",8.47,98.45,"01/18/2023",False,False,"09/17/2023",-1.0,-1.0,-1.0,"ground"
-682,"Brendan Johnson","United States of America","National within size explain animal society once civil fine factor.",3.17,10.11,"02/25/2023",False,False,"09/16/2023",-1.0,42.72,64.58,"ocean"
-85,"Brandy Williams","United States of America","Almost student your a describe wear.",1.77,75.43,"03/23/2023",False,False,"09/10/2023",-1.0,60.31,-1.0,"air"
-893,"Michael Rodriguez","United States of America","Career claim school pattern sing two song approach summer weight clearly.",1.6,41.95,"01/09/2023",False,True,"11/23/2023",40.92,42.45,-1.0,"ocean"
-761,"Lauren Anderson","United States of America","Hard data soldier open environmental blood four.",8.12,45.6,"01/28/2023",False,False,"04/19/2023",-1.0,199.17,76.28,"air"
-49,"Deanna Bender","United States of America","Shoulder reveal teacher project wish so thank.",3.48,20.19,"03/27/2023",False,False,"08/12/2023",-1.0,-1.0,97.55,"ocean"
-256,"Kyle Kent","Cape Verde","Job toward right return born.",2.1,49.45,"03/11/2023",False,True,"06/12/2023",137.91,-1.0,-1.0,"air"
-409,"Peggy Fields","United States of America","Fight cover magazine say range east star.",7.46,39.35,"03/09/2023",False,False,"12/27/2023",108.83,-1.0,176.24,"air"
-534,"Sheri Fry","United States of America","Many look become high west book bar hotel behavior upon.",1.71,120.46,"02/06/2023",True,True,"05/31/2023",88.68,-1.0,-1.0,"ground"
-785,"James Lang","United States of America","Then deal TV away chair plan.",4.19,77.61,"02/02/2023",False,False,"04/22/2023",179.14,163.13,-1.0,"ground"
-982,"Pamela Herrera","Andorra","Scene show meet check land.",8.74,11.18,"01/11/2023",False,False,"05/09/2023",55.61,-1.0,192.14,"ground"
-808,"William Williams","United States of America","Town reduce behavior apply professor newspaper space difference woman yes suffer.",2.74,57.19,"02/12/2023",False,True,"08/10/2023",-1.0,117.33,-1.0,"air"
-702,"Lisa Washington","United States of America","Eat growth ahead star.",1.85,60.45,"01/09/2023",True,False,"12/26/2023",159.53,146.21,-1.0,"ground"
-208,"Billy Spears","United States of America","Win east walk other own message drop girl already.",4.37,30.2,"02/03/2023",False,True,"05/22/2023",-1.0,51.34,-1.0,"ocean"
-549,"George Perry","Mauritius","Learn option across sound season.",1.14,33.99,"03/26/2023",True,False,"05/20/2023",-1.0,-1.0,199.5,"ocean"
-24,"Katelyn Ferguson","Christmas Island","Evening impact information school wear.",8.89,61.85,"03/17/2023",False,True,"05/22/2023",75.68,36.67,138.41,"air"
-237,"Joseph Thompson","United States of America","Research law sign PM security every.",4.54,4.37,"01/29/2023",True,False,"08/09/2023",76.43,-1.0,60.66,"ocean"
-66,"Jeffrey Elliott","Bangladesh","Choose dog he field understand.",9.63,27.37,"01/29/2023",True,False,"10/16/2023",132.71,-1.0,184.83,"air"
-159,"Jacob Harris","United Kingdom","Office trial participant her line bed responsibility specific.",2.14,123.54,"01/05/2023",False,False,"11/27/2023",-1.0,-1.0,-1.0,"ocean"
-645,"Alicia Nash","United States of America","Military start tree study campaign former.",2.27,41.44,"03/08/2023",False,False,"12/08/2023",58.84,-1.0,-1.0,"ground"
-812,"Heather Cole DDS","United States of America","Day account compare officer small director nothing else can.",0.65,123.8,"02/20/2023",True,False,"11/02/2023",189.39,-1.0,140.32,"ocean"
-317,"Rebecca Boyd","United States of America","War yet large property power factor provide season note.",3.81,115.62,"01/10/2023",True,False,"06/27/2023",103.68,-1.0,169.61,"ground"
-411,"Brandon Edwards","French Guiana","Mouth bed evidence ten would what field do.",3.27,33.32,"02/02/2023",False,False,"07/18/2023",127.88,76.25,-1.0,"ground"
-960,"Billy Wilson","Cape Verde","Economic wide exactly media picture whose turn.",6.1,45.62,"01/19/2023",True,False,"10/06/2023",95.92,-1.0,88.4,"air"
-669,"Kimberly Arnold","Indonesia","Look that red chair public six.",8.8,116.99,"03/23/2023",False,False,"11/14/2023",140.49,167.25,-1.0,"ground"
-826,"Shannon Weaver","United States of America","Might season fire still voice.",7.91,121.52,"02/26/2023",False,False,"08/03/2023",-1.0,-1.0,-1.0,"air"
-547,"Helen Foster","Palau","Bar news both once might friend.",5.34,58.5,"01/23/2023",False,True,"06/17/2023",71.92,-1.0,-1.0,"ocean"
-143,"Robert Nelson","United States of America","Trip either carry image leave member least upon bill technology.",6.15,12.55,"01/16/2023",False,False,"12/28/2023",69.11,126.62,55.44,"air"
-635,"Paul Washington","Korea","Wait it price need firm red break report.",7.19,79.12,"03/31/2023",False,False,"08/15/2023",198.75,-1.0,-1.0,"air"
-866,"Melanie Shah","Canada","Month detail product still increase begin set.",7.64,67.39,"02/28/2023",False,False,"07/04/2023",-1.0,-1.0,-1.0,"ocean"
-476,"Brittany Moses","Eritrea","Yard cultural pressure shake financial none.",7.23,49.6,"03/13/2023",False,True,"08/12/2023",39.99,-1.0,-1.0,"air"
-701,"Robin White","Niue","Pass indicate put suffer blue maybe president experience third half girl.",8.77,100.5,"03/25/2023",False,False,"07/22/2023",-1.0,-1.0,-1.0,"air"
-259,"Christine Bell","United States of America","Science section grow lot couple ground her explain me number.",1.29,87.51,"01/23/2023",False,False,"07/26/2023",121.23,-1.0,33.29,"air"
-800,"Nicole Daniels","United States of America","Feeling treat section civil much maintain.",8.3,17.44,"04/04/2023",False,True,"10/03/2023",-1.0,128.38,94.13,"ground"
-185,"Tammy Carr","United States of America","Environment seem court former wife.",2.97,72.31,"03/24/2023",False,True,"05/13/2023",-1.0,184.47,168.63,"air"
-106,"Thomas Russell","United States of America","Page artist cut team expect remain suggest per say.",6.25,1.96,"02/05/2023",False,False,"12/23/2023",106.69,85.24,-1.0,"ocean"
-793,"Doris Sutton","Svalbard & Jan Mayen Islands","Stock among bag individual hair.",4.52,113.95,"02/12/2023",False,False,"07/05/2023",-1.0,29.46,114.18,"ocean"
-504,"Anita Gonzalez","Italy","Remember activity west model.",2.76,46.42,"01/19/2023",False,True,"12/01/2023",-1.0,-1.0,113.99,"ocean"
-117,"Reginald Simpson","United States of America","Oil you study whatever this.",4.75,69.1,"03/10/2023",False,False,"11/09/2023",-1.0,123.17,-1.0,"air"
-899,"Christopher Green","Congo","Society Republican maintain condition factor attorney war.",8.9,84.72,"01/25/2023",True,False,"10/04/2023",102.13,-1.0,196.23,"ground"
-622,"Michelle Ellis","United States of America","Politics discussion to last raise final authority clearly degree.",9.73,47.8,"03/29/2023",False,True,"11/16/2023",-1.0,-1.0,96.88,"air"
-244,"Michael Garcia","United States of America","Magazine million occur prepare before test crime theory.",3.6,20.35,"01/24/2023",False,False,"06/05/2023",-1.0,-1.0,166.38,"air"
-436,"William Luna","San Marino","Laugh toward style because capital then rather recognize senior during.",4.83,25.25,"01/20/2023",False,False,"10/30/2023",-1.0,138.72,-1.0,"ocean"
-42,"Peter Conley DVM","Austria","Opportunity deal at usually chair seat.",7.7,74.46,"01/05/2023",True,True,"09/03/2023",-1.0,175.5,-1.0,"air"
-306,"Anna Glass","United States of America","Student hair event sport bed soldier life two.",1.75,45.69,"02/22/2023",False,True,"05/14/2023",123.31,-1.0,92.4,"ground"
-67,"Dr. Gary Black","United States of America","A road rather particularly car determine significant green.",0.57,122.91,"02/12/2023",True,True,"11/10/2023",163.62,184.45,84.69,"ocean"
-684,"Kathleen Morales","Peru","Shoulder street entire test young recent task type natural.",1.75,78.7,"02/12/2023",False,True,"10/29/2023",173.92,-1.0,143.24,"ground"
-392,"Annette Johnson","United States of America","Behavior million fire service head role involve face per near.",3.31,103.96,"02/10/2023",True,False,"12/26/2023",198.41,-1.0,90.77,"ocean"
-161,"Kathleen Salazar","United States of America","Main accept sure field mission stuff.",2.21,57.42,"03/08/2023",False,False,"07/02/2023",-1.0,167.18,-1.0,"air"
-404,"James Williams","Isle of Man","Join for range shake out rate election left physical probably.",0.64,51.58,"02/08/2023",False,False,"12/21/2023",96.54,76.62,-1.0,"air"
-827,"Ian Dudley","Turks and Caicos Islands","Middle modern race ground financial ok house even.",9.17,122.17,"03/29/2023",False,False,"11/03/2023",172.8,-1.0,-1.0,"ground"
-824,"Jane Powers","Afghanistan","Action clear wall participant its.",1.96,55.7,"02/01/2023",False,False,"07/24/2023",183.28,161.78,-1.0,"ocean"
-515,"Kathleen Ferrell","United States of America","Officer magazine good exactly end report thank.",5.23,56.35,"02/25/2023",False,True,"12/11/2023",42.69,-1.0,-1.0,"ocean"
-805,"Eric Zuniga","Oman","Security drug together base night after factor city.",1.69,30.13,"01/26/2023",False,False,"12/26/2023",-1.0,-1.0,-1.0,"ocean"
-763,"Alexa Morris","Lithuania","Money job while she class central item team seem.",6.55,2.0,"03/20/2023",False,True,"12/20/2023",-1.0,113.34,-1.0,"ground"
-428,"Randy Sanchez","Cuba","Hard western news matter section art institution science worry health.",1.6,71.26,"04/06/2023",False,False,"08/30/2023",-1.0,-1.0,67.58,"ocean"
-663,"Ronnie Richardson","Singapore","Personal imagine large bag industry.",7.23,21.56,"03/29/2023",False,False,"11/28/2023",-1.0,-1.0,-1.0,"ocean"
+"booking_id","customer_name","destination_country","package_description","weight","volume","required_delivery_date","is_dangerous","is_urgent","ground_price","air_price","ocean_price"
+791,"Jane Rivera DVM","United States of America","Travel crime collection true increase drop how can.",6.92,124.22,"01/09/2023",False,False,34.75,-1.0,-1.0
+742,"Adam Kidd","Honduras","Investment option join must modern small east.",5.93,115.24,"01/09/2023",False,False,161.73,82.19,49.69
+162,"Molly Stewart","United States of America","Relationship attention century apply focus however.",3.94,93.96,"03/24/2023",False,False,-1.0,-1.0,-1.0
+773,"Paula Larson","Colombia","Bar four traditional mother man when us.",9.45,122.18,"01/31/2023",False,False,-1.0,161.82,156.76
+464,"Jessica Logan","United States of America","Fall wind yet use enough role race must.",3.19,56.16,"03/10/2023",False,True,-1.0,92.99,-1.0
+367,"Vanessa Walker","United Arab Emirates","Upon three voice call research now.",3.83,54.76,"02/23/2023",False,True,-1.0,197.58,-1.0
+496,"Matthew Richardson","Ecuador","Area your defense mention glass land administration father certain behavior carry.",9.95,15.87,"03/09/2023",True,True,55.26,-1.0,135.52
+720,"Betty Buck","Bhutan","How top argue agreement civil force window race.",7.25,124.83,"01/30/2023",False,False,37.38,-1.0,150.53
+489,"Erin Lester","United States of America","Official report also run TV center son him present.",6.88,14.26,"04/08/2023",False,False,-1.0,106.29,46.49
+763,"Angela Vasquez","Rwanda","Listen make agree language peace resource.",5.64,46.41,"02/01/2023",False,False,28.7,101.31,79.46
+608,"Roy Leon","United States of America","Relationship positive argue say mind wide.",8.13,103.38,"02/19/2023",False,True,100.74,-1.0,-1.0
+334,"Mr. Blake Meadows","United States of America","He national market else listen once defense environment she.",3.9,78.77,"01/28/2023",False,False,73.0,31.6,-1.0
+124,"Jessica Tate","United States of America","Receive during any before suggest hair.",5.87,123.93,"03/10/2023",True,False,130.91,169.65,-1.0
+249,"Shannon Williams","United States of America","Once bank factor from character free.",6.22,55.91,"02/20/2023",False,True,75.71,-1.0,-1.0
+541,"Danielle Ruiz","United States of America","Interesting partner guy step include system family identify.",4.98,123.16,"01/12/2023",False,True,-1.0,132.83,-1.0
+57,"Alec Munoz","United States of America","Station party result seek baby.",8.81,54.47,"03/13/2023",False,False,-1.0,-1.0,109.82
+958,"Zachary Cabrera","United States of America","Pull two animal reality when loss.",5.12,68.83,"02/18/2023",False,False,-1.0,-1.0,157.45
+653,"Jimmy Taylor","United States of America","Prove dinner risk class player cover political factor family.",2.79,0.1,"01/17/2023",False,True,-1.0,52.67,-1.0
+960,"Diamond Perez","Vanuatu","Civil see live let light education rate yes.",2.88,119.98,"01/11/2023",False,False,184.44,-1.0,-1.0
+727,"Tara Walter","Angola","Ready choice available be the as mention apply whether.",8.12,16.34,"02/13/2023",False,False,58.43,111.2,-1.0
+297,"Heather Cooper","Burundi","Whatever discover these detail there successful month middle human.",7.45,79.98,"01/02/2023",False,True,-1.0,121.3,-1.0
+171,"Madison Montgomery","United States of America","Hope save factor condition for rich state risk they.",8.2,48.68,"01/30/2023",False,True,-1.0,100.22,-1.0
+112,"Nicholas Taylor","United States of America","Court green writer event him series social.",4.5,41.26,"02/19/2023",False,False,199.41,107.22,195.92
+119,"Michelle Griffith","Yemen","Itself kitchen physical simple do identify.",4.76,44.18,"03/22/2023",False,False,-1.0,-1.0,-1.0
+219,"Leah Black","Uruguay","Even dinner moment record others fire office see.",6.3,68.7,"02/18/2023",True,False,142.98,130.69,52.8
+311,"Jose Williams","United States of America","Training water reflect impact market start president need beat tell.",1.62,29.3,"02/05/2023",False,False,-1.0,113.84,-1.0
+407,"Vanessa Gray","Slovenia","Want rise seat speak its.",4.28,75.43,"01/08/2023",True,False,-1.0,-1.0,80.28
+143,"Kathleen Young","United States of America","Scene place hundred still fear property.",8.7,21.51,"01/21/2023",False,False,-1.0,-1.0,-1.0
+516,"Bryan Smith","United States of America","Marriage career student successful part number.",0.39,86.45,"04/09/2023",False,False,81.0,-1.0,195.35
+702,"Shannon Keith","Israel","Question people human past star require newspaper.",0.82,74.64,"02/02/2023",False,True,47.74,-1.0,-1.0
+634,"Andrew Knight","Czech Republic","Knowledge whole shoulder possible consider organization run store certain.",5.18,92.97,"03/16/2023",False,True,-1.0,-1.0,66.7
+570,"Joshua Sanders","United States of America","Form east build very often along tax.",5.42,124.63,"03/10/2023",False,False,148.42,79.2,79.59
+63,"Matthew Moreno","United States of America","Since bank trouble improve travel coach keep policy true.",5.27,23.8,"02/26/2023",False,False,-1.0,169.11,76.2
+483,"Erika Cox","Indonesia","Hour ago general represent turn fast beyond past different.",2.18,42.73,"03/25/2023",True,False,64.68,94.13,187.8
+697,"Angela Davis","Benin","If left music scene manage compare.",0.22,34.47,"03/24/2023",False,False,158.47,41.1,-1.0
+275,"Kelly Martin","Norfolk Island","His at Republican town mention become painting suffer Mrs.",4.4,124.88,"03/05/2023",False,True,160.79,-1.0,189.84
+972,"Robert Koch","Nicaragua","Deal law case society agree easy process possible kind.",8.88,91.97,"03/04/2023",False,False,-1.0,-1.0,32.74
+85,"Sara Salinas","United States of America","Focus we off next guess.",3.61,59.63,"02/05/2023",False,False,107.29,-1.0,-1.0
+714,"Courtney Johnson","United States of America","Note on simple where only what that heavy.",8.84,108.85,"01/11/2023",False,False,-1.0,-1.0,164.5
+468,"Jerry Williams","Turkey","Such opportunity must commercial exist politics.",5.15,82.7,"04/09/2023",False,False,-1.0,87.44,159.64
+529,"Courtney Richardson","Northern Mariana Islands","Team whether staff cause example indeed while.",7.11,21.41,"03/23/2023",False,False,-1.0,-1.0,84.46
+663,"Anthony Cook","United States of America","Natural third group case leave.",3.66,85.7,"01/01/2023",True,False,134.64,95.18,112.12
+477,"Melissa Patterson MD","Kazakhstan","Human to oil technology cut.",9.74,111.13,"03/21/2023",False,False,-1.0,-1.0,-1.0
+184,"Laura Gutierrez","United States of America","Suffer specific century shoulder send kind mission determine.",6.71,115.83,"03/12/2023",False,False,59.44,120.95,107.59
+51,"Jeffrey Hardin","United States of America","During very among stage risk population direction inside perhaps.",2.69,44.15,"02/04/2023",False,False,-1.0,-1.0,68.52
+382,"Virginia Duran","United States of America","Reality fly too until whose.",2.3,77.38,"01/13/2023",False,False,63.79,-1.0,-1.0
+213,"Leroy Steele","United States of America","Degree relate pretty read sell.",0.31,85.4,"03/15/2023",True,True,164.29,149.11,119.46
+23,"John Chan","United States of America","Site usually space old discussion campaign human color major popular.",8.13,54.84,"04/04/2023",False,False,88.37,164.32,31.24
+414,"Charles Murray","Papua New Guinea","Ahead term per particular live management loss site successful.",6.28,106.16,"01/19/2023",False,False,-1.0,-1.0,-1.0
+754,"Edward Hall","United States of America","Present fine note board oil two.",5.84,106.42,"02/14/2023",True,False,-1.0,165.14,186.57
+933,"Troy Harmon","United States of America","Prove may chance your board note.",7.28,2.71,"02/12/2023",True,False,-1.0,193.28,-1.0
+475,"Stephanie Mckenzie","Slovenia","Instead whether pattern scene Democrat heavy wide official.",2.11,51.93,"01/03/2023",False,False,-1.0,-1.0,25.29
+248,"Jose Carpenter","United States of America","Spend until share among including possible.",5.65,60.52,"02/04/2023",True,False,-1.0,-1.0,156.56
+999,"Eileen Mccoy","United States of America","Majority happen time task summer name in claim collection create fill.",4.45,33.96,"04/04/2023",False,False,-1.0,-1.0,137.47
+415,"Jeffery Brown","Turkey","Happy down officer line health game fish.",3.21,124.34,"02/27/2023",True,False,-1.0,80.29,128.75
+764,"Christopher Curtis","Equatorial Guinea","Strong fast result machine fly natural.",8.3,9.83,"01/19/2023",True,False,120.5,119.0,44.45
+175,"Logan Singh","Mozambique","Recognize garden notice figure lay what paper.",5.93,1.71,"01/16/2023",False,False,-1.0,75.78,73.13
+710,"Christopher Evans","United States of America","Federal scientist dark tonight quickly offer myself sing hard.",6.91,49.25,"03/31/2023",False,False,103.49,101.57,198.2
+973,"Scott James","United States of America","Room candidate century agency place he main we field.",8.97,29.6,"01/02/2023",False,True,-1.0,-1.0,-1.0
+617,"Alicia Richards","Eritrea","Also brother talk development inside center table contain teacher.",0.18,16.98,"03/07/2023",False,False,-1.0,108.97,-1.0
+562,"Rodney Wilson","United States of America","Country guess along pattern space true lead let care field.",7.23,115.34,"01/18/2023",True,True,-1.0,26.63,-1.0
+689,"Jill Adams","Saint Helena","On adult past door candidate heart him.",1.38,15.62,"01/04/2023",False,True,136.31,-1.0,-1.0
+471,"Dustin Hartman","United States of America","Way those education admit hit car before.",8.7,9.77,"02/25/2023",False,False,-1.0,54.39,140.58
+193,"Thomas Lin","Cocos (Keeling) Islands","Reduce vote road but stop raise gas.",1.77,65.2,"03/31/2023",False,False,-1.0,32.78,132.57
+644,"Charles Cook","United States of America","In guess drug argue vote get guy.",2.11,74.65,"01/16/2023",False,True,-1.0,-1.0,-1.0
+959,"Crystal Palmer","United States of America","Little physical image here kid.",0.15,50.38,"01/30/2023",False,False,-1.0,84.27,189.23
+782,"Michael Mcmillan","United States of America","Suggest develop address tonight simple he decide.",3.2,57.48,"02/04/2023",False,False,-1.0,-1.0,198.47
+560,"Crystal Vega PhD","United States of America","Writer painting never prevent ago lawyer.",4.91,38.88,"04/03/2023",False,False,-1.0,127.43,-1.0
+730,"Anthony Brooks","United States of America","Main pressure tax here politics summer research raise have when whatever.",9.59,73.6,"02/23/2023",False,False,86.79,-1.0,-1.0
+3,"Steven Anderson","Cote d'Ivoire","Last do kid production return science old oil food exactly.",2.5,80.8,"01/07/2023",False,False,29.1,-1.0,61.48
+139,"Krista Taylor","United States of America","Pull tend attack admit film computer.",8.25,66.1,"04/05/2023",False,True,-1.0,133.31,76.4
+948,"Ashley Foster","United States of America","Yes they oil various chair.",6.57,4.2,"04/09/2023",False,False,91.0,85.56,178.59
+412,"Nicole Lopez MD","Uruguay","White economy between recent where professional other manager.",5.48,124.2,"04/03/2023",False,True,-1.0,81.12,80.39
+557,"Sandra Sexton","Monaco","Run stop thought war food citizen there anything skin whole.",4.44,90.55,"03/04/2023",False,False,31.7,-1.0,121.45
+73,"Jeffrey Lambert","United States of America","Defense white agency term teach wait growth.",8.16,34.16,"02/15/2023",True,False,-1.0,61.27,118.68
+462,"James Cox","India","Card some number step we avoid.",7.21,84.9,"01/07/2023",True,False,149.4,147.5,182.35
+130,"Thomas West","Suriname","Hour exactly another rule note she lose table benefit.",4.59,11.0,"03/23/2023",False,False,54.45,107.19,86.6
+614,"Eric Sanford","United States of America","Attack treat cover win compare create visit forget shoulder current.",5.42,9.21,"03/19/2023",False,False,172.13,184.16,118.54
+831,"Chris Hensley","Bouvet Island (Bouvetoya)","Drop deal authority themselves yet push what appear.",6.13,2.85,"03/12/2023",False,False,74.35,97.6,-1.0
+435,"Anna King","United States of America","Student response behind public country occur control.",5.44,69.4,"03/22/2023",False,False,-1.0,-1.0,138.27
+394,"Diana Hatfield","United States of America","Suggest exactly since success simple health do administration.",6.3,69.16,"02/15/2023",False,False,-1.0,-1.0,43.15
+374,"Andrew Walters","Japan","Its nice red religious strategy wife bag oil others.",9.35,20.35,"02/07/2023",False,True,44.79,-1.0,189.87
+625,"Catherine Davidson","Tajikistan","Institution industry good kitchen discussion knowledge receive best leader sit.",3.53,110.96,"03/13/2023",False,False,173.62,188.59,103.88
+150,"Jennifer Wheeler","Greenland","Friend will fight hope.",0.6,96.46,"02/19/2023",False,True,-1.0,-1.0,153.7
+11,"Danny Diaz","United States of America","President really responsibility news yard.",9.72,92.4,"03/16/2023",False,False,-1.0,-1.0,117.44
+125,"James Aguirre","Lesotho","Parent future themselves management campaign Mr attention.",4.45,8.27,"03/26/2023",False,True,73.43,-1.0,67.64
+868,"Larry Oliver","Czech Republic","Own together friend remain on after drug trip must.",5.39,73.4,"01/25/2023",False,False,60.0,-1.0,165.5
+340,"George Doyle","United States of America","Daughter school claim impact with participant put.",0.83,21.4,"02/22/2023",True,False,71.66,-1.0,-1.0
+88,"Alexa Raymond","United States of America","Family nearly visit individual movie sound.",1.24,101.0,"03/13/2023",False,False,124.69,111.54,-1.0
+780,"Pamela Hart","United States of America","Discuss special suddenly city carry watch personal agency.",1.94,5.64,"01/05/2023",False,False,163.62,43.0,-1.0
+165,"Michael Stephens","Equatorial Guinea","Interview eight size everything once goal consider friend difference again.",1.32,53.17,"03/10/2023",False,False,-1.0,75.2,-1.0
+771,"Mr. Martin Lee","United States of America","Late however election treatment decade although could end four quality.",0.49,115.7,"02/21/2023",False,False,193.29,-1.0,-1.0
+682,"Steven Torres","United States of America","Become cover character nation win rest Congress but down.",5.76,89.25,"01/13/2023",False,False,113.3,-1.0,-1.0
+832,"Brandon Baker","United States of America","Worry black same money politics section hard the too.",5.68,14.52,"02/23/2023",False,False,35.34,170.82,56.29
+167,"Tony Smith","United States of America","Open state teach society him.",1.88,101.73,"01/18/2023",False,False,138.59,184.98,-1.0
+703,"Taylor Rhodes","United States of America","Friend sport bit themselves agree.",7.72,63.82,"03/27/2023",False,False,112.0,-1.0,169.84
+573,"Mrs. Ashley Silva DDS","United States of America","Voice interview from capital discussion pay.",2.77,15.71,"04/01/2023",False,True,-1.0,-1.0,37.58
+590,"Joanne Gregory","United States of America","Like allow stand eye series majority send rock.",9.79,64.69,"04/05/2023",False,True,-1.0,-1.0,-1.0
+490,"Adam Roberts","Guinea-Bissau","Whose if national chance war PM series choice chair old one.",6.1,25.44,"01/24/2023",False,False,90.33,71.4,-1.0
+595,"Christian Ramos","Samoa","Option speak address only.",0.92,57.15,"03/14/2023",False,False,-1.0,-1.0,-1.0
+1000,Piotr Slusarczyk,Poland,Large data container,0.25,26.64,04/13/2023,True,True,45,-1,30
