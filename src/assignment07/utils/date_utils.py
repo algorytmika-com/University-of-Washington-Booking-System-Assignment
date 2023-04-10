@@ -11,3 +11,10 @@ def is_date_in_future_days(checked_date, days, compare_date = datetime.today()):
 
 def get_date_converted_from_str(date_str, format):
     return datetime.strptime(date_str, format)
+
+def add_date(current_date:datetime = datetime.today(), days_added: int = 0 ) -> datetime:
+    d = current_date + timedelta(days = days_added)
+    return d
+
+def convert_datetime_to_str(d: datetime, format: str) -> str:
+    return datetime.strftime(d, format)

@@ -1,8 +1,8 @@
 import pandas as pd
 from utils import input_validation as iv
 from utils import business_validation as bv
+from utils import date_utils as d
 from models import booking as b, route as r
-
 
 POSITIVE_FLOAT = "Positive float value (e.g. 7.25)"
 
@@ -59,9 +59,17 @@ def get_input_volume() -> float:
     volume = width * depth * height
     return volume
 
-def get_required_date():
+def get_required_date(is_urgent: bool):
     input = get_input("What is the required delivery date (month/date/year):", 'future_date', "Future date (month/date/year)")
-    return input
+    if is_urgent:
+        print("The package is urgent - the date set to 3 days from now.")
+        return d.convert_datetime_to_str(d.add_date(days_added = 3), '%m/%d/%Y')
+    else:
+        if d.get_date_converted_from_str(input, '%m/%d/%Y') > d.add_date(days_added = 7):
+            return input
+        else:
+            print("The package is not urgent - the delivery date cannot be set to less than 7 days from now.")
+            return d.convert_datetime_to_str(d.add_date(days_added = 7), '%m/%d/%Y')
 
 def get_input(prompt, validation_option, format) -> str:
     while True:
