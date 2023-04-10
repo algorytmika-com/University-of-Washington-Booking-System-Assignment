@@ -159,3 +159,6 @@ def get_ocean_cost(customer_booking : b.Booking) -> float:
         return 30
     else:
         return -1
+    
+
+ 

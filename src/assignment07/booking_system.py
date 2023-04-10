@@ -9,7 +9,7 @@ def main():
         if response == "1":
             f.add_booking()
         elif response == "2":
-            pass
+            f.report_all_bookings()
         elif response == "3":
             pass
         elif response == "4":

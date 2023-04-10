@@ -1,21 +1,21 @@
 import sys, os
 
-from controllers import file as f, booking as b
-from utils import format as fmt
+from controllers import file as f, booking as b, report as r
 from models import booking
 
 prompt = "\n".join(("Please choose from below options:",
           "1 - Add a new booking",
-          "2 - Generate a report of all bookings",
-          "3 - Generate a report of urgent booking",
+          "2 - Generate a report of all booking quotes",
+          "3 - Generate a report of urgent booking quotes",
           "4 - Generate a report of truck shipments",
           "5 - Generate a report of air shipments",
           "6 - Generate a report of ocean shipments",
           "7 - Generate a report of dangerous goods shipments",
-          "8 - Quit",
+          "8 - Quit", 
           ">>> "))
 
 def add_booking():
+    
     while True:
         csv_path = f.get_path()
         bookings = f.get_dataframe_from_file(csv_path)
@@ -33,19 +33,17 @@ def add_booking():
             break
         required_delivery_date = b.get_required_date(is_urgent)
         customer_booking = booking.Booking(booking_incremented_id, customer_name, destination_country, package_description, weight, volume, required_delivery_date, is_dangerous, is_urgent)
-        print(booking_incremented_id, customer_name, destination_country, package_description, weight, volume, required_delivery_date, is_dangerous, is_urgent)
         route = b.get_route(customer_booking)
         customer_booking.set_route(route)
         route = b.get_route_prices(customer_booking)
         customer_booking.set_route(route)
-        print('is_ground=', route.is_ground)
-        print('is_air=', route.is_air)
-        print('is_ocean=', route.is_ocean)        
-        print('ground_price=', route.ground_price)
-        print('air_price=', route.air_price)
-        print('ocean_price=', route.ocean_price)        
+        r.print_shipping_options(r.convert_to_dataframe(customer_booking))
         break
 
+def report_all_bookings():
+    csv_path = f.get_path()
+    bookings = f.get_dataframe_from_file(csv_path)
+    r.print_shipping_options(bookings)
 
 def exit_program() -> None:
     print("Bye!")
