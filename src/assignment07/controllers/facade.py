@@ -7,11 +7,8 @@ prompt = "\n".join(("Please choose from below options:",
           "1 - Add a new booking",
           "2 - Generate a report of all booking quotes",
           "3 - Generate a report of urgent booking quotes",
-          "4 - Generate a report of truck shipments",
-          "5 - Generate a report of air shipments",
-          "6 - Generate a report of ocean shipments",
-          "7 - Generate a report of dangerous goods shipments",
-          "8 - Quit", 
+          "4 - Generate a report of dangerous goods shipments",
+          "5 - Quit", 
           ">>> "))
 
 def add_booking():
@@ -37,13 +34,23 @@ def add_booking():
         customer_booking.set_route(route)
         route = b.get_route_prices(customer_booking)
         customer_booking.set_route(route)
-        r.print_shipping_options(r.convert_to_dataframe(customer_booking))
+        r.print_shipping_options(r.convert_to_dataframe(customer_booking), "AVAILABLE ROUTING OPTIONS")
         break
 
 def report_all_bookings():
     csv_path = f.get_path()
     bookings = f.get_dataframe_from_file(csv_path)
-    r.print_shipping_options(bookings)
+    r.print_all_bookings(bookings, "ALL BOOKING QUOTES")
+
+def report_urgent_bookings():
+    csv_path = f.get_path()
+    bookings = f.get_dataframe_from_file(csv_path)
+    r.print_urgent_bookings(bookings, "URGENT BOOKING QUOTES")  
+
+def report_dangerous_bookings():
+    csv_path = f.get_path()
+    bookings = f.get_dataframe_from_file(csv_path)
+    r.print_dangerous_bookings(bookings, "BOOKING QUOTES WITH DANGEROUS PACKAGES")        
 
 def exit_program() -> None:
     print("Bye!")

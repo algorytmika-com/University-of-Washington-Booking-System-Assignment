@@ -11,16 +11,10 @@ def main():
         elif response == "2":
             f.report_all_bookings()
         elif response == "3":
-            pass
+            f.report_urgent_bookings()
         elif response == "4":
-            pass
+            f.report_dangerous_bookings()
         elif response == "5":
-            pass  
-        elif response == "6":        
-            pass 
-        elif response == "7":        
-            pass       
-        elif response == "8":
             f.exit_program()
         else:
             print("Not a valid option!")

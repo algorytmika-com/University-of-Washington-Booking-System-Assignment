@@ -17,8 +17,19 @@ def convert_to_dataframe(booking_obj : b.Booking) -> pd.DataFrame:
          }
     return pd.DataFrame(data=d)
 
-def print_shipping_options(booking: pd.DataFrame):
-    f.print_message("Available routing options")
+def print_all_bookings(booking: pd.DataFrame, title):
+    print_shipping_options(booking, title)
+
+def print_urgent_bookings(booking: pd.DataFrame, title):
+    booking = booking[booking['is_urgent'] == True]
+    print_shipping_options(booking, title)    
+
+def print_dangerous_bookings(booking: pd.DataFrame, title):
+    booking = booking[booking['is_dangerous'] == True]
+    print_shipping_options(booking, title)        
+
+def print_shipping_options(booking: pd.DataFrame, title):
+    f.print_message(title)
     booking = booking.astype({'air_price':'string','ground_price':'string', 'ocean_price':'string'})
     booking['destination_country'] = booking['destination_country'].str[:24]
     booking['package_description'] = booking['package_description'].str[:24]
