@@ -2,7 +2,9 @@ from models import route
 
 class Booking:
 
-    def __init__(self, booking_id, customer_name, destination_country, package_description, weight, volume, required_delivery_date, is_dangerous, is_urgent):
+    def __init__(self, booking_id = None, customer_name= None, destination_country= None, 
+                 package_description= None, weight= None, volume= None, 
+                 required_delivery_date= None, is_dangerous= False, is_urgent= False):
         self.booking_id = booking_id
         self.customer_name = customer_name
         self.destination_country = destination_country
