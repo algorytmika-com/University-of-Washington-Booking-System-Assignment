@@ -102,8 +102,9 @@ def get_input_with_business_validation(business_validation_option, prompt, input
                 continue    
 
 def get_route(customer_booking : b.Booking) -> r.Route:
-    route = r.Route(is_ground = True, is_air = True, is_ocean = True)
+    route = r.Route(is_air= True, is_ground= True, is_ocean= True)
     route.set_preferred_route(route.GROUND)
+    print('route.preferred_route= ', route.preferred_route)
     if not bv.is_international(customer_booking):
         route.set_ocean_route(False)
     if bv.is_urgent(customer_booking):
@@ -115,8 +116,38 @@ def get_route(customer_booking : b.Booking) -> r.Route:
             route.set_preferred_route(route.OCEAN)
         else:
             route.set_preferred_route(route.GROUND)
+    print('route.is_air= ', route.is_air)
     return route
 
-        
+def get_route_prices(customer_booking : b.Booking) -> r.Route:
+    route = customer_booking.route
+    route.set_ground_price(get_ground_cost(customer_booking))
+    route.set_air_price(get_air_cost(customer_booking))
+    route.set_ocean_price(get_ocean_cost(customer_booking))
+    return route
 
+def get_air_cost(customer_booking : b.Booking) -> float:
+    air_weight_cost = customer_booking.weight * 10
+    air_volume_cost = customer_booking.volume * 20
+    if customer_booking.route.is_air:
+        if air_volume_cost >= air_weight_cost:
+            return round(air_volume_cost, 2)
+        else:
+            return round(air_weight_cost, 2)
+    else:
+        return -1
 
+def get_ground_cost(customer_booking : b.Booking) -> float:
+    if customer_booking.route.is_ground:
+        if customer_booking.is_urgent:
+            return 45
+        else:
+            return 25
+    else:
+        return -1
+    
+def get_ocean_cost(customer_booking : b.Booking) -> float:
+    if customer_booking.route.is_ocean:
+        return 30
+    else:
+        return -1

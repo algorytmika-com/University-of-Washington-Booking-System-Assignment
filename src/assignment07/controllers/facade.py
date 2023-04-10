@@ -35,9 +35,15 @@ def add_booking():
         customer_booking = booking.Booking(booking_incremented_id, customer_name, destination_country, package_description, weight, volume, required_delivery_date, is_dangerous, is_urgent)
         print(booking_incremented_id, customer_name, destination_country, package_description, weight, volume, required_delivery_date, is_dangerous, is_urgent)
         route = b.get_route(customer_booking)
+        customer_booking.set_route(route)
         print('is_ground=', route.is_ground)
         print('is_air=', route.is_air)
         print('is_ocean=', route.is_ocean)
+
+        route = b.get_route_prices(customer_booking)
+        print('ground_price=', route.ground_price)
+        print('air_price=', route.air_price)
+        print('ocean_price=', route.ocean_price)        
         break
 
 

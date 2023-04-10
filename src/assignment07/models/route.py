@@ -21,7 +21,16 @@ class Route:
         self.is_air = is_air
 
     def set_ocean_route(self, is_ocean : bool):
-        self.is_ocean = is_ocean       
+        self.is_ocean = is_ocean    
+
+    def set_ground_price(self, ground_price : float):
+        self.ground_price = ground_price     
+
+    def set_air_price(self, air_price : float):
+        self.air_price = air_price    
+
+    def set_ocean_price(self, ocean_price : float):
+        self.ocean_price = ocean_price                      
 
     def set_preferred_route(self, preferred_route : str):
         self.preferred_route = preferred_route           
