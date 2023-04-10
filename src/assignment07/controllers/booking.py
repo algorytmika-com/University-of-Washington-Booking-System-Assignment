@@ -111,18 +111,17 @@ def get_input_with_business_validation(business_validation_option, prompt, input
 
 def get_route(customer_booking : b.Booking) -> r.Route:
     route = r.Route(is_air= True, is_ground= True, is_ocean= True)
-    route.set_preferred_route(route.GROUND)
     if not bv.is_international(customer_booking):
         route.set_ocean_route(False)
     if bv.is_urgent(customer_booking):
-        route.set_preferred_route(route.AIR)
+        route.set_air_route(True)
     if bv.is_dangerous(customer_booking):
         route.set_air_route(False)
     if (bv.is_heavy(customer_booking) or bv.is_large(customer_booking)) and not bv.is_urgent(customer_booking):
         if bv.is_international(customer_booking):
-            route.set_preferred_route(route.OCEAN)
+            route.set_ocean_route(True)
         else:
-            route.set_preferred_route(route.GROUND)
+            route.set_ground_route(True)
     return route
 
 def get_route_prices(customer_booking : b.Booking) -> r.Route:

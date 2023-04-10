@@ -31,6 +31,4 @@ class Route:
 
     def set_ocean_price(self, ocean_price : float):
         self.ocean_price = round(ocean_price, 2)                      
-
-    def set_preferred_route(self, preferred_route : str):
-        self.preferred_route = preferred_route           
+  
