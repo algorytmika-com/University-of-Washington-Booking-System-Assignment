@@ -1,11 +1,11 @@
 from controllers import facade as f
 from utils import format as fmt
 
+
 def main():
     while True:
         fmt.print_message("MENU")
-        response = input(f.prompt)  
-        f.clear_console()
+        response = input(f.prompt)
         if response == "1":
             f.add_booking()
         elif response == "2":
@@ -18,6 +18,7 @@ def main():
             f.exit_program()
         else:
             print("Not a valid option!")
+
 
 if __name__ == "__main__":
     main()

@@ -30,7 +30,6 @@ def is_dangerous(booking_obj: booking.Booking) -> bool:
 
 def is_urgent(booking_obj: booking.Booking) -> bool:
     return booking_obj.is_urgent
-
    
 def is_rule_for_urgent(booking_obj: booking.Booking) -> bool:
     future_date = d.get_date_converted_from_str(booking_obj.required_delivery_date, '%m/%d/%Y')
